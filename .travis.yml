@@ -8,6 +8,7 @@ deploy:
   secret_access_key:
     secure: TLU2uAR8P0pPNaebHuYz3/73zeabPxWRB4BOZRXYx3uwQTMAEKBmHVhnCEJeSE/xOLFPH9NJYrP0ZQPJvwfXEw6rYNm7SmJXC9UfBGevlUZsPmxqoAOpA9WplFjnQfrpkXYqFcKp1so2kq8x/32LJVVD9uL8QNO4gzRabzx/mFf5jYBs467GPL8KqTZvbSAJOQp1KjxePOvhcJSOT0Ok9MtOmJ68WQ2U33+Pxacu2w1ubUUtPJfLn6SnVEI5g7AkGNs0/3GSsaryIFn5l9RCsgSnTFZJiNN6sofA9fHTH7iiT7mSlq2dzkUu/qIJnSH+7IQW6P/lynEb8u16Uc/HkB9/yVLqhf5YiH2d4li9tcNiqegKNTxPpHu9k/UxDxLoWt05TsMjjItZplLJUGlnO3dOAsbqw4qutC+QKKTXO3x1zp7m2LzNFj5qeAehlaCcfywrQr2keEFpUlxEV1V12Eag+Vx/Mxwq8gnzP6/eX7rIzouvILMfCoqAlOHj5lbRf6ZfmHjdlptFSB5dUsz8VwRurcfHfxbwe5jNObe2b+WZxWYkndOBaOW65LNQ2r8IFCKc282ezCFemGb3OrhFT9Hxi4RTi/GBNLsUTsYfYHuZhoaLX/vMyfgeQH8gaZ/wWV4SaHYfBzNpgVhFhhoxbXv7a4S1FkvWNQLO2VJa614=
   bucket: 18vofficial.com
+  region: "us-west-2"
   acl: public_read
   on:
     repo: 18v/18vofficial.com
