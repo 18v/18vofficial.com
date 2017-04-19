@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "name": "18vofficial.com",
+  "version": "1.0.0",
+  "description": "18vofficial.com website",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/18v/18vofficial.com.git"
+  },
+  "homepage": "http://18vofficial.com"
+}
