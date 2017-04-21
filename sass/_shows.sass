@@ -1,0 +1,18 @@
+.shows
+	img
+		border: $line
+		width: 100%
+		max-width: 500px
+
+	.table .row .cell
+		text-align: left
+		padding: 0 30px
+
+		@media only screen and (max-device-width: $iphone)
+			text-align: center
+			padding: 0
+			display: initial
+
+	@media only screen and (max-device-width: $iphone)
+		.cell + .cell
+			margin-top: 30px
