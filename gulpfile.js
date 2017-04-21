@@ -33,7 +33,19 @@ gulp.task('images', () => {
 });
 
 gulp.task('connect', () => {
-	connect.server();
+	connect.server({
+		root: 'dist',
+		livereload: true
+	});
+});
+
+gulp.task('watch', () => {
+	gulp.watch(['./src/js/**/*.js'], ['js']);
+	gulp.watch(['./src/pug/**/*.pug'], ['views']);
+	gulp.watch(['./src/sass/**/*.sass'], ['sass']);
+	gulp.watch(['./src/assets/fonts/*'], ['fonts']);
+	gulp.watch(['./src/assets/images/*'], ['images']);
 });
 
 gulp.task('default', ['views', 'sass', 'js', 'fonts', 'images']);
+gulp.task('dev', ['views', 'sass', 'js', 'fonts', 'images', 'connect', 'watch']);
