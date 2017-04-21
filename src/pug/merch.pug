@@ -1,117 +1,89 @@
 extends structure/_layout.pug
 
 block content
+
+
 	.body-wrapper
 		section.merch
-			h1 merch
-			
+			img.title-merch(src="/images/merch.svg")
 			.table
 				.row
-				
-					.cell
-						img(src="/images/XVIII-vinyl.jpg")
-						h3.name xviii Vinyl Pre-Order
-						p.price $19.99
-						a.button.small.gold-outline.merch-button(href="http://eighteenvisions.merchnow.com" target="_blank") Pre-Order Now
-
-					.cell
-						img(src="/images/tshirt-nail-white.jpg")
-						h3.name splatter T-Shirt white
-						p.price $19.99
-						a.button.small.gold-outline.merch-button(href="http://18vmerch.com/shop/view_product/SPLATTER___NAIL___WHITE_ON_BLACK?ctype=0&n=9007563&o=0" target="_blank") Buy Now
-
-					.cell
-						img(src="/images/tshirt-nail-black.jpg")
-						h3.name splatter t-shirt black
-						p.price $19.99
-						a.button.small.gold-outline.merch-button(href="http://18vmerch.com/shop/view_product/SPLATTER___NAIL___BLACK_ON_BLACK_TEE?ctype=0&n=9007558&o=0" target="_blank") Buy Now
-
-					.cell
-						img(src="/images/hoodie-nail-white.jpg")
-						h3.name splatter hoodie white
-						p.price $39.99
-						a.button.small.gold-outline.merch-button(href="http://18vmerch.com/shop/view_product/SPLATTER___NAIL___WHITE_ON_BLACK?ctype=0&n=9007578&o=0" target="_blank") Buy Now
-
-					.cell
-						img(src="/images/hoodie-nail-black.jpg")
-						h3.name splatter hoodie black
-						p.price $39.99
-						a.button.small.gold-outline.merch-button(href="http://18vmerch.com/shop/view_product/SPLATTER___NAIL___BLACK_ON_BLACK?ctype=0&n=9007583&o=0" target="_blank") Buy Now
+					include bits/_merch-top.pug
 			
-					.cell
+					a.cell(href="http://eighteenvisions.merchconnection.com" target="_blank")
 						img(src="/images/windbreaker-nail-black.jpg")
 						h3.name splatter windbreaker black
 						p.price $19.99
-						a.button.small.gold-outline.merch-button(href="") Buy Now
+						.button.small.gold-outline.merch-button Buy Now
 
-					.cell
+					a.cell(href="http://eighteenvisions.merchconnection.com" target="_blank")
 						img(src="/images/windbreaker-nail-camo.jpg")
 						h3.name splatter windbreaker gold
 						p.price $19.99
-						a.button.small.gold-outline.merch-button(href="") Buy Now
+						.button.small.gold-outline.merch-button Buy Now
 
-					.cell
+					a.cell(href="http://eighteenvisions.merchconnection.com" target="_blank")
 						img(src="/images/longsleeve-psychotic-black.jpg")
 						h3.name psychotic longsleeve
 						p.price $19.99
-						a.button.small.gold-outline.merch-button(href="") Buy Now
+						.button.small.gold-outline.merch-button Buy Now
 
-					.cell
+					a.cell(href="http://eighteenvisions.merchconnection.com" target="_blank")
 						img(src="/images/longsleeve-oath-black.jpg")
 						h3.name oath longsleeve 
 						p.price $19.99
-						a.button.small.gold-outline.merch-button(href="") Buy Now
+						.button.small.gold-outline.merch-button Buy Now
 
-					.cell
+					a.cell(href="http://eighteenvisions.merchconnection.com" target="_blank")
 						img(src="/images/hat-splatter-white.jpg")
 						h3.name splatter hat white
 						p.price $19.99
-						a.button.small.gold-outline.merch-button(href="") Buy Now
+						.button.small.gold-outline.merch-button Buy Now
 
-					.cell
+					a.cell(href="http://eighteenvisions.merchconnection.com" target="_blank")
 						img(src="/images/hat-splatter-black.jpg")
 						h3.name splatter hat black
 						p.price $19.99
-						a.button.small.gold-outline.merch-button(href="") Buy Now
+						.button.small.gold-outline.merch-button Buy Now
 
-					.cell
+					a.cell(href="http://eighteenvisions.merchconnection.com" target="_blank")
 						img(src="/images/tshirt-nail-silver.jpg")
 						h3.name splatter t-shirt silver
 						p.price $19.99
-						a.button.small.gold-outline.merch-button(href="") Buy Now
+						.button.small.gold-outline.merch-button Buy Now
 
-					.cell
+					a.cell(href="http://eighteenvisions.merchconnection.com" target="_blank")
 						img(src="/images/tshirt-nail-gold.jpg")
 						h3.name splatter t-shirt gold
 						p.price $19.99
-						a.button.small.gold-outline.merch-button(href="") Buy Now
+						.button.small.gold-outline.merch-button Buy Now
 
-					.cell
+					a.cell(href="http://eighteenvisions.merchconnection.com" target="_blank")
 						img(src="/images/hoodie-nail-silver.jpg")
 						h3.name splatter hoodie
 						p.price $39.99
-						a.button.small.gold-outline.merch-button(href="") Buy Now
+						.button.small.gold-outline.merch-button Buy Now
 
-					.cell
+					a.cell(href="http://eighteenvisions.merchconnection.com" target="_blank")
 						img(src="/images/hoodie-nail-gold.jpg")
 						h3.name splatter hoodie
 						p.price $39.99
-						a.button.small.gold-outline.merch-button(href="") Buy Now
+						.button.small.gold-outline.merch-button Buy Now
 
-					.cell
+					a.cell(href="http://eighteenvisions.merchconnection.com" target="_blank")
 						img(src="/images/hoodie-XVIII-silver.jpg")
 						h3.name XVIII hoodie silver
 						p.price $19.99
-						a.button.small.gold-outline.merch-button(href="") Buy Now
+						.button.small.gold-outline.merch-button Buy Now
 
-					.cell
+					a.cell(href="http://eighteenvisions.merchconnection.com" target="_blank")
 						img(src="/images/hoodie-XVIII-gold.jpg")
 						h3.name XVIII hoodie gold
 						p.price $19.99
-						a.button.small.gold-outline.merch-button(href="") Buy Now
+						.button.small.gold-outline.merch-button Buy Now
 
-					.cell
+					a.cell(href="http://eighteenvisions.merchconnection.com" target="_blank")
 						img(src="/images/polo-nail-black.jpg")
 						h3.name nail polo
 						p.price $19.99
-						a.button.small.gold-outline.merch-button(href="") Buy Now
+						.button.small.gold-outline.merch-button Buy Now

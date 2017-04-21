@@ -6,6 +6,7 @@ block content
 		section.news.news-bg
 			.global-width
 				h1.huge XVIII
+				//- img.title-xviii(src="/images/XVIII-brush.svg")
 				.vinyl.margin-bottom
 					img(src="/images/vinyl.png")
 				a.button.large.gold.margin-bottom(href="http://eighteenvisions.merchnow.com", target="_blank") pre-order the album
@@ -14,7 +15,8 @@ block content
 		// oath video
 		section.video
 			.global-width
-				h1.huge oath
+				//- h1.huge oath
+				img.title-oath(src="/images/oath.svg")
 				p.margin-bottom Watch "Oath" from the new album "XVIII" directed by Michael Garcia.
 				.youtube-player(data-id="WBmjprLSjRU")
 			//- a.button.view-all.small(href="videos.html") view all videos
@@ -26,6 +28,8 @@ block content
 
 		// merch
 		section.merch.merch-bg
-			h1 merch
-			include bits/_merch-top.pug
+			img.title-merch(src="/images/merch.svg")
+			.table
+				.row
+					include bits/_merch-top.pug
 			a.button.view-all.small(href="merch.html") view all merch

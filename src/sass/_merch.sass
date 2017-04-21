@@ -3,6 +3,8 @@
 	background-size: cover
 
 .merch
+	padding-top: 170px
+
 	p
 		font-size: 15px
 
@@ -11,9 +13,16 @@
 
 		.cell
 			flex: initial
-			max-width: 450px
+			max-width: 420px
 			align-items: center
-			padding: 0 30px 100px 30px
+			margin: 0 10px 100px 10px
+			padding: 20px
+			border-radius: 6px
+			text-decoration: none
+			cursor: pointer
+
+			// border: 1px solid red
+			transition: $transition
 
 			@media only screen and (max-device-width: $iphone)
 				padding: 0 0 50px 0
@@ -33,3 +42,11 @@
 
 			img
 				width: 100%
+				box-shadow: 0 0 50px black
+
+			&:hover
+				background: rgba(white, 0.1)
+
+				.gold-outline
+					background-color: $gold
+					color: black
