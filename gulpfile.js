@@ -3,6 +3,7 @@ const	connect = require('gulp-connect');
 const pug = require('gulp-pug');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
+const imagemin = require('gulp-imagemin');
 
 gulp.task('views', () => {
 	return gulp.src('src/pug/*.pug')
@@ -33,6 +34,7 @@ gulp.task('fonts', () => {
 
 gulp.task('images', () => {
 	return gulp.src('src/assets/images/*')
+    .pipe(imagemin())
     .pipe(gulp.dest('dist/images'))
     .pipe(connect.reload());
 });
