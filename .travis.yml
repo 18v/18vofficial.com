@@ -10,5 +10,6 @@ deploy:
   bucket: 18vofficial.com
   region: "us-west-2"
   acl: public_read
+  local_dir: dist
   on:
     repo: 18v/18vofficial.com
