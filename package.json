@@ -11,5 +11,12 @@
     "type": "git",
     "url": "git+https://github.com/18v/18vofficial.com.git"
   },
-  "homepage": "http://18vofficial.com"
+  "homepage": "http://18vofficial.com",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0"
+  }
 }
