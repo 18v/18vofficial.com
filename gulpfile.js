@@ -14,22 +14,26 @@ gulp.task('sass', () => {
 	return gulp.src('src/sass/**/*.sass')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
-    .pipe(gulp.dest('dist/css'));
+    .pipe(gulp.dest('dist/css'))
+    .pipe(connect.reload());
 });
 
 gulp.task('js', () => {
 	return gulp.src('src/js/**/*.js')
-    .pipe(gulp.dest('dist/js'));
+    .pipe(gulp.dest('dist/js'))
+    .pipe(connect.reload());
 });
 
 gulp.task('fonts', () => {
 	return gulp.src('src/assets/fonts/*')
-    .pipe(gulp.dest('dist/fonts'));
+    .pipe(gulp.dest('dist/fonts'))
+    .pipe(connect.reload());
 });
 
 gulp.task('images', () => {
 	return gulp.src('src/assets/images/*')
-    .pipe(gulp.dest('dist/images'));
+    .pipe(gulp.dest('dist/images'))
+    .pipe(connect.reload());
 });
 
 gulp.task('connect', () => {
