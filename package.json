@@ -5,7 +5,8 @@
   "description": "18vofficial.com website",
   "main": "index.js",
   "scripts": {
-    "test": "exit 0"
+    "test": "exit 0",
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
