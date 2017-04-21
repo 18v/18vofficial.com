@@ -32,6 +32,12 @@ gulp.task('fonts', () => {
     .pipe(connect.reload());
 });
 
+gulp.task('favicon', () => {
+	return gulp.src('src/assets/favicon.ico')
+    .pipe(gulp.dest('dist/'))
+    .pipe(connect.reload());
+});
+
 gulp.task('images', () => {
 	return gulp.src('src/assets/images/*')
     .pipe(imagemin())
@@ -54,5 +60,5 @@ gulp.task('watch', () => {
 	gulp.watch(['./src/assets/images/*'], ['images']);
 });
 
-gulp.task('default', ['views', 'sass', 'js', 'fonts', 'images']);
-gulp.task('dev', ['views', 'sass', 'js', 'fonts', 'images', 'connect', 'watch']);
+gulp.task('default', ['views', 'sass', 'js', 'fonts', 'images', 'favicon']);
+gulp.task('dev', ['views', 'sass', 'js', 'fonts', 'images', 'favicon', 'connect', 'watch']);
