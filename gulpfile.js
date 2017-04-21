@@ -6,8 +6,9 @@ const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('views', () => {
 	return gulp.src('src/pug/*.pug')
-  .pipe(pug({}))
-  .pipe(gulp.dest('dist'));
+	.pipe(pug({}))
+	.pipe(gulp.dest('dist'))
+	.pipe(connect.reload());
 });
 
 gulp.task('sass', () => {
