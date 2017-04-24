@@ -25,19 +25,27 @@
 		margin-top: 10px
 		font-size: 0
 
+		@media only screen and (max-device-width: $iphone)
+			// flex-direction: column
+			flex-wrap: wrap
+			justify-content: center
+
 		li + li
-			margin-left: 10px
+			margin-left: 5px
 
 		li
 			display: flex
 			text-transform: uppercase
-			font-size: 10px
-			letter-spacing: 5px
-			text-indent: 5px
+			font-size: 9px
+			letter-spacing: 4px
+			text-indent: 4px
 			line-height: 1
 
+			// border: 1px solid red
+
 			@media only screen and (max-device-width: $iphone)
-				font-size: 12px
+				font-size: 11px
+				line-height: 2
 
 			a
 				display: flex

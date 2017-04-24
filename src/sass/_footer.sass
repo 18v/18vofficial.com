@@ -1,6 +1,6 @@
 .footer-wrapper
 	display: flex
-	flex-direction: column
+	flex-direction: row
 	align-items: center
 	justify-content: center
 	height: 60px
@@ -8,10 +8,13 @@
 	font-size: 0
 
 .social
-	display: inline-block
+	display: block
 	cursor: pointer
 
 	img
 		height: 30px
 		width: 30px
 		color: white
+
+.social + .social
+	margin-left: 30px

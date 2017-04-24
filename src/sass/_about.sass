@@ -1,14 +1,29 @@
 .about
 	.table
+		flex-direction: row
+		margin-bottom: 60px
+
+		@media only screen and (max-device-width: $iphone)
+			flex-direction: column
+			margin-bottom: 0
+
 		.row
 			font-size: 0
-			margin-bottom: 100px
+
+			// margin-bottom: 100px
 			justify-content: center
+			flex-direction: column
+
+			@media only screen and (max-device-width: $iphone)
+				margin-bottom: 60px
 
 			.cell
-				max-width: 300px
-				padding: 0 30px
-				text-align: left
+				// max-width: 400px
+				padding: 0 10px
+
+				// text-align: left
+				flex: initial
+				font-size: 0
 
 				h2
 					font-size: 15px

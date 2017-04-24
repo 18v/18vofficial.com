@@ -3,7 +3,7 @@ extends structure/_layout.pug
 block content
 	.body-wrapper
 	
-		section.news.news-bg
+		section.news.news-bg.padding-top
 			.global-width
 				h1.huge XVIII
 				//- img.title-xviii(src="/images/XVIII-brush.svg")
@@ -13,12 +13,15 @@ block content
 				p New album "XVIII" will be released June 2nd, 2017 and is now available for pre-order! Produced, mixed and mastered by the incredible Mick Kenney at The Barracks in Huntington Beach, Ca.
 
 		// oath video
-		section.video
-			.global-width
+		section.video-bg
+			.global-width.video
 				//- h1.huge oath
 				img.title-oath(src="/images/oath.svg")
 				p.margin-bottom Watch "Oath" from the new album "XVIII" directed by Michael Garcia.
-				.youtube-player(data-id="WBmjprLSjRU")
+				//- .youtube-player(data-id="WBmjprLSjRU")
+				.video-wrapper
+					iframe(src="https://www.youtube.com/embed/WBmjprLSjRU", frameborder="0", allowfullscreen)
+
 			//- a.button.view-all.small(href="videos.html") view all videos
 
 		// shows
