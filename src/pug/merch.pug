@@ -3,11 +3,17 @@ extends structure/_layout.pug
 block content
 	.body-wrapper
 		section.merch.padding-top
-			img.title-merch(src="/images/merch.svg")
+			h1.huge Merch
 			.table
 				.row
 					include bits/_merch-top.pug
 			
+					a.cell(href="http://18vmerch.com/shop/view_product/XVIII___WHITE_ON_BLACK?ctype=0&n=9203903&o=0" target="_blank")
+						img(src="/images/tshirt-XVIII.jpg")
+						h3.name XVIII
+						p.price $19.99
+						.button.small.gold-outline.merch-button Buy Now
+
 					a.cell(href="http://18vmerch.com/shop/view_product/SPLATTER___NAIL___BLACK_ON_BLACK_TEE?ctype=0&n=9007558&o=0" target="_blank")
 						img(src="/images/tshirt-nail-black.jpg")
 						h3.name splatter t-shirt black
