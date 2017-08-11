@@ -2,7 +2,7 @@
 	img.poster
 		border: $line
 		width: 100%
-		max-width: 500px
+		max-width: 300px
 
 	.table .row .cell
 		text-align: left
@@ -12,6 +12,18 @@
 			text-align: center
 			padding: 0
 			display: initial
+
+	.table .row .cell:first-child
+		align-items: flex-end
+
+	.row
+		margin-bottom: 60px
+
+	.cell p:last-child
+		margin-top: 30px
+
+	// .cell p:first-child
+	// // font-size: 30px
 
 	@media only screen and (max-device-width: $iphone)
 		.cell + .cell
